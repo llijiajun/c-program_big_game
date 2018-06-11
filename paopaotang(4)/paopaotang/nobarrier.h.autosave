@@ -1,0 +1,17 @@
+#ifndef NOBARRIER_H
+#define NOBARRIER_H
+
+
+class Nobarrier
+{
+public:
+    Nobarrier(){}
+    Barrier(int x,int y,string file):Box(x,y,file){}
+    void show(QPainter *painter);
+    string getType()const{return "nobarrier";}
+    ~Nobarrier();
+private:
+    
+};
+
+#endif // NOBARRIER_H
